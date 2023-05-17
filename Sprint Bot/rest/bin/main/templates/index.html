@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	</head>
+	
+<body>
+	<!-- Navegación -->
+	<div class="container">
+		<nav class="breadcrumb" aria-label="breadcrumbs">
+			<ul>
+				<li><a href="/index">Facultad</a></li>
+				<li><a href="/greeting">Servicios</a></li>
+				<li><a href="/egresados">Egresado</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- Cuerpo del documento -->
+	<div class="container">
+		<div class="card">
+			<div class="card-content">
+				<div class="content">
+					<p th:text="'Hello, ' + ${name} + '!'" />
+						<h1>Bienvenido al micrositio Facultad de Ingeniería </h1>
+					<p>La Facultad de Ingeniería de la Universidad Autónoma de Campeche, les da la más cordial bienvenida a su sitio web, en donde encontrarán información relevante y actual de los servicios, eventos, noticias, programas educativos, y proyectos relacionados con al ámbito profesional que desempeña.</p>
+					<p>¡Sean Bienvenidos!</p>
+					<p>DIRECTOR</p>
+					<p>MAC. Francisco Javier Barrera Lao.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+	</div>
+	
+	<footer th:fragment="footer">
+		<p>(c) UACAM 2023</p>
+	</footer>
+
+</body>
+</html>

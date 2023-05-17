@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	</head>
+	
+<body>
+	<!-- Navegación -->
+	<div class="container">
+		<nav class="breadcrumb" aria-label="breadcrumbs">
+			<ul>
+				<li><a href="/index">Facultad</a></li>
+				<li><a href="/greeting">Servicios</a></li>
+				<li><a href="/egresados">Egresado</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- Cuerpo del documento -->
+	<div class="container">
+		<div class="card">
+			<div class="card-content">
+				<div class="content">
+					<p th:text="'Hello, ' + ${name} + '!'" />
+						<h1>Egresados de la Facultad de Ingeniería </h1>
+					<p>Aplicar el Programa Institucional de Estudio y Seguimiento de Egresados (PIESE) de la UACAM como una estrategia evaluativa para ofrecer información acerca del impacto académico de la oferta educativa en el mercado laboral, a través del análisis del desempeño y desarrollo profesional de los egresados con base en su formación recibida y la realidad del mundo laboral.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+	</div>
+	
+	<footer th:fragment="footer">
+		<p>(c) UACAM 2023</p>
+	</footer>
+
+</body>
+</html>
